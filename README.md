@@ -40,7 +40,7 @@ Figure 2: The charts show the results of the evaluation of *DroNet* and *FlowDro
 The following flight tests with the system have shown that some of the optical flow characteristics can lead to complications and therefore need to be carefully considered for the intended use. However, since the real-world tests were mostly successful it is demonstrated that *FlowDroNet* can operate under real-world conditions, which reinforces the assumption that optical flow is a useful tool for generalization. For an example video of a test flight see [[YouTube](https://www.youtube.com/watch?v=3Si6SKx_Cas)].
 
 ![Test Flight](./misc/images/test_flight.png)
-Figure 3: The HUD of the FlowDroNet implementation for testing consists of the two images on the left, together with the prediction and velocity bars. The image on the right shows the external view of the experiment. All images are taken at the moment when the impending collision was detected and the drone was stopped. Use the QR-Code for a video of a test flight.
+Figure 3: The HUD of the FlowDroNet implementation for testing consists of the two images on the left, together with the prediction and velocity bars. The image on the right shows the external view of the experiment. All images are taken at the moment when the impending collision was detected and the drone was stopped.
 
 ### Citing ###
 
@@ -50,7 +50,7 @@ Coming Soon ...
 
 ### Dependencies and Installation ###
 
-The software has been tested on *Ubuntu* 18.04 and *Mac OS X* 10.14.6 using *Unity* 2019.2.x and *Python* 3.6. See `requirements.txt` for a complete list of the required *Python* libraries and use the following command to install those:
+The software has been tested on *Ubuntu* 18.04 and *Mac OS X* 10.14.6 using *Unity* 2019.2.x and *Python* 3.6. See `requirements.txt` for a complete list of the required *Python* libraries and use the following command to install them:
 ```
 $ pip install -r requirements.txt
 ```
@@ -64,7 +64,7 @@ This toolbox is based on the following implementations:
 
 ### Generate a Dataset ##
 
-The Optical Flow Collision Simulator (OFCS) is located in the `OFCS` directory. Create a new *Unity* project in this subfolder, the relevant files should be imported automatically. The scene `/Assets/Scenes/Main.unity` contains the mechanics for creating datasets. The following steps for producing data with the OFCS are displayed in figure below. For a quick first start, select the `Seeker` object (cyan) from the *Hierarchy*. Then enter a valid folder (e.g. `/path/to/OFCS_Output/`) for the output in the respective field of the `Unit` component (green) in the *Inspector*. Click on the *Play* button (red) to start the simulator and thus the production of data. The displayed rendering style (real, optical flow or depth) can be selected via the *Display* dropdown menu (blue) in the *Game* tab. Most of the important parameters are set via the *Inspector* and can be found on the `Seeker` object or the `Camera` attached to it. The relevant parameters are displayed in the sections of the scripts (`Unit` and `ImageSynthesis`), which are components of these objects.
+The Optical Flow Collision Simulator (OFCS) is located in the `OFCS` directory. Create a new *Unity* project in this subfolder, the relevant files should be imported automatically. Open the scene `/Assets/Scenes/Main.unity` containing the mechanics for creating datasets. The following steps for producing data with the OFCS are displayed in figure below. For a quick first start, select the `Seeker` object (cyan) from the *Hierarchy*. Then enter a valid folder (e.g. `/path/to/OFCS_Output/`) for the output in the respective field of the `Unit` component (green) in the *Inspector*. Click on the *Play* button (red) to start the simulator and thus the production of data. The displayed rendering style (real, optical flow or depth) can be selected via the *Display* dropdown menu (blue) in the *Game* tab. Most of the important parameters are set via the *Inspector* and can be found on the `Seeker` object or the `Camera` attached to it. The relevant parameters are displayed in the sections of the scripts (`Unit` and `ImageSynthesis`), which are components of these objects.
 
 ![The Unity GUI with the OFCS running.](./misc/images/ofcsgui.png)
 Figure 4: The GUI of Unity with the OFCS running.
