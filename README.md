@@ -1,8 +1,8 @@
-# Generalization via Optical Flow #
-#### Training a CNN with Simulated Environments to Detect Obstacles in Real-Life ####
+# Domain Generalization via Optical Flow: #
+### Training a CNN in a Low-Quality Simulation to Detect Obstacles in the Real World ###
 
-![Flowchart of the Process](./misc/images/flowchart.png)
-Figure 1: Simplified flowchart of the process of training and using a CNN with artificial optical flow (OF) for collision avoidance.
+This repository contains the code and links to the datasets and models used for our paper, presented at CRV 2020: [[Paper on IEEExplore]](https://ieeexplore.ieee.org/document/9108671) [[Presentation on YouTube]](https://www.youtube.com/watch?v=Ig6go4ao9ks&feature=youtu.be)
+
 
 ### Table of Contents ###
 - [Introduction](#introduction)
@@ -25,6 +25,9 @@ Figure 1: Simplified flowchart of the process of training and using a CNN with a
 
 ## Introduction ##
 
+![Flowchart of the Process](./misc/images/flowchart.png)
+Figure 1: Simplified flowchart of the process of training and using a CNN with artificial optical flow (OF) for collision avoidance.
+
 ### Abstract ###
 
 Machine learning techniques have become established tools in the field of computer vision. They have been successfully used for obstacle avoidance, and they are very likely to be implemented in related real-world applications in the future. Since one of the big cost and time factors in machine learning is the production of datasets, using a simulator to generate data provides a cost-effective and flexible alternative to capturing real data. However, the use of a simulator only makes sense if the neural network is able to generalize from simulated to real-world data.
@@ -44,7 +47,19 @@ Figure 3: The HUD of the FlowDroNet implementation for testing consists of the t
 
 ### Citing ###
 
-Coming Soon ...
+Please use the following bibtex data for citation:
+```
+@INPROCEEDINGS{9108671,
+	author={M. {Sperling} and Y. {Bouteiller} and R. {de Azambuja} and G. {Beltrame}},
+    booktitle={2020 17th Conference on Computer and Robot Vision (CRV)},
+    title={Domain Generalization via Optical Flow: Training a CNN in a Low-Quality Simulation to Detect Obstacles in the Real World},
+    year={2020},
+    volume={},
+    number={},
+    pages={117-124},
+    doi={10.1109/CRV50864.2020.00024},
+}
+```
 
 ## Running the Programs ##
 
