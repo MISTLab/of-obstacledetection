@@ -18,7 +18,7 @@ Markdown==3.1
 matplotlib==3.0.3
 networkx==2.2
 numpy==1.16.2
-opencv-python==3.4.4.19
+opencv-python==3.4.7.28
 pandas==0.24.2
 Pillow==6.0.0
 protobuf==3.7.1
